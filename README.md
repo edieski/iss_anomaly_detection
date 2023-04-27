@@ -1,9 +1,10 @@
 # iss_anomaly_detection
 this project involves using Airflow to collect real-time location and altitude data from the International Space Station API, storing it in a time-series database, and creating a Grafana dashboard with anomaly detection alerts.
 
-Sprint 1:
-
 I love space so this is my first project of the space series :) Go space !
+
+
+Sprint 1:
 
 Goal: Set up the project infrastructure and data collection pipeline.
 
