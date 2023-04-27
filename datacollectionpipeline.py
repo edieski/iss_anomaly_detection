@@ -14,7 +14,7 @@ default_args = {
 dag = DAG(
     'iss_data_collection',
     default_args=default_args,
-    schedule_interval=dt.timedelta(minutes=30)
+    schedule_interval=dt.timedelta(minutes=5)
 )
 
 get_data_task = PythonOperator(
@@ -43,13 +43,5 @@ create_table_task = MySqlOperator(
     dag=dag
 )
 
-insert_data_task = MySqlOperator(
-    task_id='insert_iss_data_into_db',
-    mysql_conn_id='my_mysql_connection',
-    sql='''INSERT INTO iss_data (timestamp, latitude, longitude, velocity, altitude)
-                SELECT timestamp, latitude, longitude, velocity, altitude FROM iss_data_raw;
-        ''',
-    dag=dag
-)
 
 create_table_task >> get_data_task >> insert_data_task
