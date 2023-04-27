@@ -8,34 +8,34 @@ Sprint 1:
 
 Goal: Set up the project infrastructure and data collection pipeline.
 
-Set up a Python environment with the necessary packages and dependencies.
+- Set up a Python environment with the necessary packages and dependencies.
 
-Define the schema for the ISS data and create a table in the relational database to store the data.
+- Define the schema for the ISS data and create a table in the relational database to store the data.
 
-Develop an Airflow DAG to collect the ISS data periodically using the Open Notify API and store it in the database.
+- Develop an Airflow DAG to collect the ISS data periodically using the Open Notify API and store it in the database.
 
-Verify that the data collection pipeline is working correctly and data is being stored in the database.
+- Verify that the data collection pipeline is working correctly and data is being stored in the database.
 
 Sprint 2:
 
 Goal: Develop the anomaly detection algorithm and integrate it with the data pipeline.
 
-Research and select an appropriate anomaly detection algorithm for time-series data.
+- Research and select an appropriate anomaly detection algorithm for time-series data.
 
-Develop Python code to process the data from the database and detect anomalies using the selected algorithm.
+- Develop Python code to process the data from the database and detect anomalies using the selected algorithm.
 
-Integrate the anomaly detection code with the Airflow DAG to automate the detection process.
+- Integrate the anomaly detection code with the Airflow DAG to automate the detection process.
 
-Test the anomaly detection process using sample data and verify that it is detecting anomalies correctly.
+- Test the anomaly detection process using sample data and verify that it is detecting anomalies correctly.
 
 Sprint 3:
 
 Goal: Develop the Grafana dashboard and set up alerts for detected anomalies.
 
-Design a Grafana dashboard that displays the ISS data and highlights detected anomalies.
+- Design a Grafana dashboard that displays the ISS data and highlights detected anomalies.
 
-Develop Python code to push the data from the database to Grafana using the Grafana API.
+- Develop Python code to push the data from the database to Grafana using the Grafana API.
 
-Set up alerts in Grafana to notify users when anomalies are detected.
+- Set up alerts in Grafana to notify users when anomalies are detected.
 
-Test the dashboard and alerting system using sample data and verify that it is working correctly.
+- Test the dashboard and alerting system using sample data and verify that it is working correctly.
